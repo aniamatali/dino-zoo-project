@@ -2,6 +2,15 @@ body {
   background-color:grey;
 }
 
+
+#inputleft {
+  float:left;
+}
+
+#inputright {
+  float:right;
+}
+
 .dinoinfo {
   background-color:orange;
 }
@@ -20,4 +29,40 @@ body {
 
 .dinoeditinfo2 {
   background-color:lightGreen;
+}
+
+.dinoinfolist {
+  background-color:beige;
+}
+
+.col-md-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.col-md-8 {
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.col-md-12 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.ng-untouched {
+  margin-bottom:0px;
+}
+
+.row {
+  margin:0px;
+  margin-top:0px;
+}
+
+h3 {
+  margin-top:0px;
+}
+
+p {
+  margin-bottom: 0px;
 }

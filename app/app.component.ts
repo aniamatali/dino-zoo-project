@@ -15,15 +15,17 @@ import { Dinosaur } from './dinosaur.model';
 
     <div class="row">
 
-    <div class="col-md-4">
+    <div class="col-md-12">
       <new-dinosaur [childNewDinosaur]="masterDinosaurs" (newSender)="appendNewItems($event)"></new-dinosaur>
     </div>
-
-    <div class="col-md-8">
-
-      <dinosaur-list [childDinosaurList]="masterDinosaurs" (clickSender)="editDinosaur($event)" (eatSender)="updateDinosaurCaretakers($event)"></dinosaur-list>
-      <p>Total Needed Caretakers: {{totalCaretakersNeeded}}<p>
-
+    </div>
+    <div class="row">
+    <div class="col-md-12">
+      <div class="dinoinfolist">
+        <dinosaur-list [childDinosaurList]="masterDinosaurs" (clickSender)="editDinosaur($event)" (eatSender)="updateDinosaurCaretakers($event)"></dinosaur-list>
+        <p>Total Needed Caretakers: {{totalCaretakersNeeded}}<p>
+      </div>
+    </div>
     </div>
 
     <div class="row">

@@ -5,11 +5,7 @@ import { Dinosaur } from './dinosaur.model';
   selector: 'dinosaur-list',
   template: `
 
-  <select (change)="onChange($event.target.value)">
-    <option value = "alldinosaurs"> All Dinosaurs</option>
-    <option value = "Herbivore">Herbivores</option>
-    <option value = "Carnivore">Carnivores</option>
-  </select>
+
 
   <ul>
 
@@ -31,6 +27,13 @@ import { Dinosaur } from './dinosaur.model';
   </li>
 
   </ul>
+
+  <select (change)="onChange($event.target.value)">
+    <option value = "alldinosaurs"> All Dinosaurs</option>
+    <option value = "Herbivore">Herbivores</option>
+    <option value = "Carnivore">Carnivores</option>
+  </select>
+
   `
 })
 
