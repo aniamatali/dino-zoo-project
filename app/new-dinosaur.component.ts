@@ -8,13 +8,13 @@ import { Dinosaur } from './dinosaur.model';
   <form>
   <div class="row">
   <div class="col-md-6">
-    Species:
+    Species<br>
     <input type="text" #species><br>
-    Name:
+    Name<br>
     <input type="text" #name><br>
-    Age:
+    Age<br>
     <input type="text" #age><br>
-    Diet:
+    Diet<br>
     <select #diet>
       <option value = "Herbivore">Herbivore</option>
       <option value = "Carnivore">Carnivore</option>
@@ -22,17 +22,20 @@ import { Dinosaur } from './dinosaur.model';
     </select>
   </div>
   <div class="col-md-6">
-    Location:
+    Location<br>
     <input type="text" #location><br>
-    Sex:
+    Sex<br>
     <input type="text" #sex><br>
-    Likes:
+    Likes<br>
     <input type="text" #likes><br>
-    Dislikes:
+    Dislikes<br>
     <input type="text" #dislikes><br>
-    <button (click) = "NewItems(species.value, name.value, age.value, diet.value, location.value, sex.value, likes.value, dislikes.value); species.value='';name.value='';age.value='';diet.value='';location.value='';sex.value='';likes.value='';dislikes.value='';">Add</button>
+  </div>
+    <div class="col-md-12">
+    <button id ="adddinobutt" (click) = "NewItems(species.value, name.value, age.value, diet.value, location.value, sex.value, likes.value, dislikes.value); species.value='';name.value='';age.value='';diet.value='';location.value='';sex.value='';likes.value='';dislikes.value='';">Add</button>
     </div>
     </div>
+
   </form>
 </div>
 

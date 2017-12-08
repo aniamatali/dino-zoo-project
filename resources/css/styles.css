@@ -17,22 +17,34 @@ body {
 
 .dinoform {
   background-color:lightCyan;
+  font-family: 'Roboto', sans-serif;
+  font-size:20px;
 }
 
-.editform {
-  background-color:darkBlue;
+#adddinobutt {
+  margin-left:15px;
+  margin-bottom:15px;
 }
 
+.dinolist li {
+  list-style:none;
+}
 .dinoeditinfo {
   background-color:darkGreen;
+  font-family: 'Roboto', sans-serif;
+  font-size:20px;
 }
 
 .dinoeditinfo2 {
   background-color:lightGreen;
+  font-family: 'Roboto', sans-serif;
+  font-size:20px;
 }
 
 .dinoinfolist {
   background-color:beige;
+  font-family: 'Roboto', sans-serif;
+  font-size:20px;
 }
 
 .col-md-4 {
