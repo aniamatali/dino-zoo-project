@@ -2,6 +2,15 @@ body {
   background-color:grey;
 }
 
+.titlediv {
+  background-image:url("../images/bg1.jpg");
+  background-attachment:fixed;
+  background-repeat:none;
+}
+
+h1 {
+  color:white;
+}
 
 #inputleft {
   float:left;
@@ -11,14 +20,31 @@ body {
   float:right;
 }
 
+.card {
+  background-image:url("../images/bg1.jpg");
+  background-attachment:fixed;
+  background-repeat:none;
+  color:white;
+}
+
 .dinoinfo {
-  background-color:orange;
+  background-image:url("../images/bg1.jpg");
+  background-attachment:fixed;
+  background-repeat:none;
+  color:white;
 }
 
 .dinoform {
-  background-color:lightCyan;
   font-family: 'Roboto', sans-serif;
   font-size:20px;
+  background-image:url("../images/bg1.jpg");
+  background-attachment:fixed;
+  background-repeat:none;
+  color:white;
+}
+
+.dinoform p {
+  margin-top:5px;
 }
 
 #adddinobutt {
@@ -29,22 +55,54 @@ body {
 .dinolist li {
   list-style:none;
 }
+
+ select {
+  width:100%;
+  text-align-last:center;
+}
+
 .dinoeditinfo {
-  background-color:darkGreen;
+  width:100%;
+  text-align:center;
+  background-image:url("../images/bg1.jpg");
+  background-attachment:fixed;
+  background-repeat:none;
+  color:white;
+}
+
+.dinoeditinfo li {
+    list-style:none;
+    font-size:20px;
+}
+
+.dinoeditinfo {
   font-family: 'Roboto', sans-serif;
   font-size:20px;
+  color:white;
 }
 
 .dinoeditinfo2 {
-  background-color:lightGreen;
   font-family: 'Roboto', sans-serif;
   font-size:20px;
+  background-image:url("../images/bg1.jpg");
+  background-attachment:fixed;
+  background-repeat:none;
+  color:white;
+}
+
+.dinoeditinfo2 button {
+  margin-left:15px;
+  margin-top:15px;
+  margin-bottom:15px;
 }
 
 .dinoinfolist {
-  background-color:beige;
   font-family: 'Roboto', sans-serif;
   font-size:20px;
+  background-image:url("../images/bg1.jpg");
+  background-attachment:fixed;
+  background-repeat:none;
+  color:white;
 }
 
 .col-md-4 {
@@ -55,6 +113,10 @@ body {
 .col-md-8 {
   padding-left:0px;
   padding-right:0px;
+}
+
+.col-md-6 {
+  padding-left:50px;
 }
 
 .col-md-12 {

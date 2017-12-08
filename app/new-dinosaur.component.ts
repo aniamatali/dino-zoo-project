@@ -8,13 +8,13 @@ import { Dinosaur } from './dinosaur.model';
   <form>
   <div class="row">
   <div class="col-md-6">
-    Species<br>
+    <p>Species</p>
     <input type="text" #species><br>
-    Name<br>
-    <input type="text" #name><br>
-    Age<br>
-    <input type="text" #age><br>
-    Diet<br>
+    <p>Name</p>
+    <input type="text" #name>
+    <p>Age</p>
+    <input type="text" #age>
+    <p>Diet</p>
     <select #diet>
       <option value = "Herbivore">Herbivore</option>
       <option value = "Carnivore">Carnivore</option>
@@ -22,13 +22,13 @@ import { Dinosaur } from './dinosaur.model';
     </select>
   </div>
   <div class="col-md-6">
-    Location<br>
+    <p>Location</p>
     <input type="text" #location><br>
-    Sex<br>
+    <p>Sex</p>
     <input type="text" #sex><br>
-    Likes<br>
+    <p>Likes</p>
     <input type="text" #likes><br>
-    Dislikes<br>
+    <p>Dislikes</p>
     <input type="text" #dislikes><br>
   </div>
     <div class="col-md-12">

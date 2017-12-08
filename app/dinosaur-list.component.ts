@@ -8,11 +8,13 @@ import { Dinosaur } from './dinosaur.model';
 
 <div class="dinolist">
 
+<div id="dinosaurdropdown">
 <select (change)="onChange($event.target.value)">
-  <option value = "alldinosaurs"> All Dinosaurs</option>
+  <option value = "alldinosaurs"> View all Dinosaurs</option>
   <option value = "Herbivore">Herbivores</option>
   <option value = "Carnivore">Carnivores</option>
 </select>
+</div>
 
 <div class="row">
   <div class="card col-md-4" *ngFor="let currentItem of childDinosaurList | diet:filterBydiet">
@@ -35,8 +37,8 @@ import { Dinosaur } from './dinosaur.model';
   Caretakers
     <span *ngIf="currentItem.caretakers <= 5" style="color:red;">{{currentItem.caretakers}}</span>
     <span *ngIf="currentItem.caretakers > 5" style="color:green;">{{currentItem.caretakers}}</span>
-    <span *ngIf="currentItem.caretakers < 1"> Nature always finds a way! </span><button (click)="editDinosaurClicked(currentItem)">Edit!</button>
-    <button (click)="updateDinosaurCaretakers(currentItem)">eat caretaker!</button>
+    <span *ngIf="currentItem.caretakers < 1"> Nature always finds a way!<br> </span><br><button (click)="editDinosaurClicked(currentItem)">EDIT</button>
+    <br><button (click)="updateDinosaurCaretakers(currentItem)">EAT CARETAKER</button>
 </div>
 </div>
 </div>

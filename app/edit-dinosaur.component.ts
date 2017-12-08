@@ -4,37 +4,58 @@ import { Dinosaur } from './dinosaur.model';
 @Component({
   selector: 'edit-dinosaur',
   template: `
-  <div class="dinoeditinfo">
-  <div *ngIf="childSelectedDinosaur">
-  <h3>{{childSelectedDinosaur.species}}</h3>
-  <h3>{{childSelectedDinosaur.name}}</h3>
-  <h3>{{childSelectedDinosaur.age}}</h3>
-  <h3>{{childSelectedDinosaur.diet}}</h3>
-  <h3>{{childSelectedDinosaur.location}}</h3>
-  <h3>{{childSelectedDinosaur.sex}}</h3>
-  <h3>{{childSelectedDinosaur.likes}}</h3>
-  <h3>{{childSelectedDinosaur.dislikes}}</h3>
+  <div class="row">
+    <div class="dinoeditinfo">
+      <div class ="card col-md-12" *ngIf="childSelectedDinosaur">
+        <div class="card-header">
+          {{childSelectedDinosaur.name}}
+        </div>
+        <div class="card-body" id="editcard">
+          <ul>
+            <li>{{childSelectedDinosaur.species}}</li>
+            <li>{{childSelectedDinosaur.age}}</li>
+            <li>{{childSelectedDinosaur.diet}}</li>
+            <li>{{childSelectedDinosaur.location}}</li>
+            <li>{{childSelectedDinosaur.sex}}</li>
+            <li>{{childSelectedDinosaur.likes}}</li>
+            <li>{{childSelectedDinosaur.dislikes}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
+
   <div class="dinoeditinfo2">
-  <h3>Edit Dinosaur</h3>
-  Edit Name:
-  <input type="text" #name><br>
-  Edit Age:
-  <input type="text" #age><br>
-  Edit Diet:
-  <input type="text" #diet><br>
-  Edit Species:
-  <input type="text" #species><br>
-  Edit Sex:
-  <input type="text" #sex><br>
-  Edit Location:
-  <input type="text" #location><br>
-  Edit Likes:
-  <input type="text" #likes><br>
-  Edit Dislikes:
-  <input type="text" #dislikes><br>
-  <button (click) = "doneButtonClicked(species.value, name.value, age.value, diet.value, location.value, sex.value, likes.value, dislikes.value)">Done</button>
+    <div class="row">
+      <div class="col-md-6">
+        Edit Name<br>
+        <input type="text" #name><br>
+        Edit Age<br>
+        <input type="text" #age><br>
+        Edit Diet<br>
+        <input type="text" #diet><br>
+        Edit Species<br>
+        <input type="text" #species><br>
+        </div>
+        <div class="col-md-6">
+        Edit Sex<br>
+        <input type="text" #sex><br>
+
+
+        Edit Location<br>
+        <input type="text" #location><br>
+        Edit Likes<br>
+        <input type="text" #likes><br>
+        Edit Dislikes<br>
+        <input type="text" #dislikes><br>
+    </div>
   </div>
+  <div class="row">
+  <div class="col-md-12">
+    <button (click) = "doneButtonClicked(species.value, name.value, age.value, diet.value, location.value, sex.value, likes.value, dislikes.value)">Done</button>
+  </div>
+  </div>
+
 </div>
   `
 })

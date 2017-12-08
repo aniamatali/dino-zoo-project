@@ -23,7 +23,7 @@ import { Dinosaur } from './dinosaur.model';
     <div class="col-md-12">
       <div class="dinoinfolist">
         <dinosaur-list [childDinosaurList]="masterDinosaurs" (clickSender)="editDinosaur($event)" (eatSender)="updateDinosaurCaretakers($event)"></dinosaur-list>
-        <p>Total Needed Caretakers: {{totalCaretakersNeeded}}<p>
+        <p>Living Caretakers: {{totalCaretakersNeeded}}<p>
       </div>
     </div>
     </div>
