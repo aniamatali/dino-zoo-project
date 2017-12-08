@@ -4,6 +4,7 @@ import { Dinosaur } from './dinosaur.model';
 @Component({
   selector: 'new-dinosaur',
   template: `
+  <div class="dinoform">
   <form>
     Species:
     <input type="text" #species><br>
@@ -28,6 +29,7 @@ import { Dinosaur } from './dinosaur.model';
     <input type="text" #dislikes><br>
     <button (click) = "NewItems(species.value, name.value, age.value, diet.value, location.value, sex.value, likes.value, dislikes.value); species.value='';name.value='';age.value='';diet.value='';location.value='';sex.value='';likes.value='';dislikes.value='';">Add</button>
   </form>
+  </div>
   `
 })
 

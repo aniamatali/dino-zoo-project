@@ -1,3 +1,23 @@
 body {
   background-color:grey;
 }
+
+.dinoinfo {
+  background-color:orange;
+}
+
+.dinoform {
+  background-color:lightCyan;
+}
+
+.editform {
+  background-color:darkBlue;
+}
+
+.dinoeditinfo {
+  background-color:darkGreen;
+}
+
+.dinoeditinfo2 {
+  background-color:lightGreen;
+}

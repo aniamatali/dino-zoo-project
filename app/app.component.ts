@@ -5,13 +5,20 @@ import { Dinosaur } from './dinosaur.model';
   selector: 'app-root',
   template: `
     <div class="container">
+    <div class="titlediv">
       <h1>Epicodus Park</h1>
-      <p>Total Needed Caretakers: {{totalCaretakersNeeded}}<p>
+    </div>
+
       <new-dinosaur [childNewDinosaur]="masterDinosaurs" (newSender)="appendNewItems($event)"></new-dinosaur>
 
+      <div class="dinoinfo">
+      <p>Total Needed Caretakers: {{totalCaretakersNeeded}}<p>
       <dinosaur-list [childDinosaurList]="masterDinosaurs" (clickSender)="editDinosaur($event)" (eatSender)="updateDinosaurCaretakers($event)"></dinosaur-list>
+
+
       <edit-dinosaur [childSelectedDinosaur] = "selectedDinosaur" (doneButtonClickedSender)="finishedEditing($event)"></edit-dinosaur>
 
+      </div>
     </div>
   `
 })

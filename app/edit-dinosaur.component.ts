@@ -4,6 +4,7 @@ import { Dinosaur } from './dinosaur.model';
 @Component({
   selector: 'edit-dinosaur',
   template: `
+  <div class="dinoeditinfo">
   <div *ngIf="childSelectedDinosaur">
   <h3>{{childSelectedDinosaur.species}}</h3>
   <h3>{{childSelectedDinosaur.name}}</h3>
@@ -13,6 +14,8 @@ import { Dinosaur } from './dinosaur.model';
   <h3>{{childSelectedDinosaur.sex}}</h3>
   <h3>{{childSelectedDinosaur.likes}}</h3>
   <h3>{{childSelectedDinosaur.dislikes}}</h3>
+  </div>
+  <div class="dinoeditinfo2">
   <h3>Edit Dinosaur</h3>
   Edit Name:
   <input type="text" #name><br>
@@ -31,6 +34,7 @@ import { Dinosaur } from './dinosaur.model';
   Edit Dislikes:
   <input type="text" #dislikes><br>
   <button (click) = "doneButtonClicked(species.value, name.value, age.value, diet.value, location.value, sex.value, likes.value, dislikes.value)">Done</button>
+  </div>
 </div>
   `
 })
