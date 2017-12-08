@@ -18,7 +18,7 @@ import { Dinosaur } from './dinosaur.model';
 
 <div class="row">
   <div class="card col-md-4" *ngFor="let currentItem of childDinosaurList | diet:filterBydiet">
-  <div class="card-header">
+  <div class="card-header bg-primary">
   Name: {{currentItem.name}}
 
   </div>
@@ -33,12 +33,12 @@ import { Dinosaur } from './dinosaur.model';
   <li>Dislikes: {{currentItem.dislikes}}</li>
   </ul>
   </div>
-  <div class="card-footer">
-  Caretakers
-    <span *ngIf="currentItem.caretakers <= 5" style="color:red;">{{currentItem.caretakers}}</span>
-    <span *ngIf="currentItem.caretakers > 5" style="color:green;">{{currentItem.caretakers}}</span>
-    <span *ngIf="currentItem.caretakers < 1"> Nature always finds a way!<br> </span><br><button (click)="editDinosaurClicked(currentItem)">EDIT</button>
-    <br><button (click)="updateDinosaurCaretakers(currentItem)">EAT CARETAKER</button>
+  <div class="card-footer bg-danger">
+  <h4>Caretakers
+    <span *ngIf="currentItem.caretakers <= 5" style="color:black;">{{currentItem.caretakers}}</span>
+    <span *ngIf="currentItem.caretakers > 5" style="color:white;">{{currentItem.caretakers}}</span></h4>
+    <span *ngIf="currentItem.caretakers < 1" style="color:white;"> <h4>Nature always finds a way!</h4><br> </span><br><button (click)="editDinosaurClicked(currentItem)">EDIT</button>
+    <br><button (click)="updateDinosaurCaretakers(currentItem)">KILL CARETAKER</button>
 </div>
 </div>
 </div>

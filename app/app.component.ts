@@ -42,9 +42,10 @@ import { Dinosaur } from './dinosaur.model';
 export class AppComponent {
 
     masterDinosaurs: Dinosaur[] = [
-      new Dinosaur('T-Rex', 'Bruno', 2, 'Carnivore', 'trex land', 'm', 'killing', 'not killing'),
-      new Dinosaur('Brontosaurus', 'Billy', 14, 'Herbivore', 'longneck island', 'm', 'pooping', 'stepping in poop'),
-      new Dinosaur('Velociraptor', 'Seth', 16, 'Carnivore', 'dads basement', 'm', 'mains reaper in overwatch', 'following the rules'),
+      new Dinosaur('T-Rex', 'Bruno', 2, 'Carnivore', 'T-REX Exhibit', 'M', 'Eating People', 'Eating Garbage'),
+      new Dinosaur('Brontosaurus', 'Billy', 14, 'Herbivore', 'Longneck Lane', 'M', 'Doing Homework', 'Bullies'),
+      new Dinosaur('Velociraptor', 'Lenny', 16, 'Carnivore', 'Velociraptor Exhibit', 'M', 'C#', 'Having Fun'),
+      new Dinosaur('Triceratops', 'Tracy', 42, 'Herbivore', 'Triceratops Exhibit', 'F', 'Taxes', 'Knitting Hats'),
     ];
   selectedDinosaur = null;
   totalCaretakersNeeded: number = this.totalCaretakers();

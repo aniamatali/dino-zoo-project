@@ -27,10 +27,8 @@ h1 {
 }
 
 .card {
-  background-image:url("../images/bg1.jpg");
-  background-attachment:fixed;
-  background-repeat:none;
-  color:white;
+
+  color:black;
 }
 
 .dinoinfo {
