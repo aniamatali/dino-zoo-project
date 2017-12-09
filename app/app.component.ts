@@ -13,11 +13,11 @@ import { Dinosaur } from './dinosaur.model';
         </div>
       </div>
 
-    <div class="row">
 
-    <div class="col-md-12">
-      <new-dinosaur [childNewDinosaur]="masterDinosaurs" (newSender)="appendNewItems($event)"></new-dinosaur>
-    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <new-dinosaur [childNewDinosaur]="masterDinosaurs" (newSender)="appendNewItems($event)"></new-dinosaur>
+        </div>
     </div>
     <div class="row">
     <div class="col-md-12">

@@ -11,15 +11,15 @@ import { Dinosaur } from './dinosaur.model';
           {{childSelectedDinosaur.name}}
         </div>
         <div class="card-body" id="editcard">
-          <ul>
-            <li>{{childSelectedDinosaur.species}}</li>
-            <li>{{childSelectedDinosaur.age}}</li>
-            <li>{{childSelectedDinosaur.diet}}</li>
-            <li>{{childSelectedDinosaur.location}}</li>
-            <li>{{childSelectedDinosaur.sex}}</li>
-            <li>{{childSelectedDinosaur.likes}}</li>
-            <li>{{childSelectedDinosaur.dislikes}}</li>
-          </ul>
+
+            <p>Species:{{childSelectedDinosaur.species}}</p>
+            <p>Age:{{childSelectedDinosaur.age}}</p>
+            <p>Diet:{{childSelectedDinosaur.diet}}</p>
+            <p>Location:{{childSelectedDinosaur.location}}</p>
+            <p>Sex:{{childSelectedDinosaur.sex}}</p>
+            <p>Likes:{{childSelectedDinosaur.likes}}</p>
+            <p>Dislikes:{{childSelectedDinosaur.dislikes}}</p>
+
         </div>
       </div>
     </div>

@@ -4,19 +4,25 @@
 }
 
 body {
-  background-color:white;
+  background: #F0C27B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container {
   border:2px solid black;
   margin-bottom:10px;
   margin-top:10px;
+  background: #70e1f5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .titlediv {
-  background-color:white;
+  /*background-image:url("../images/bg1.jpg");
   background-attachment:fixed;
-  background-repeat:none;
+  background-repeat:none;*/
 }
 
 h1 {
@@ -29,6 +35,22 @@ h1 {
 .card {
   border-radius:0;
   color:black;
+}
+
+#dinosaurdropdown select{
+  background: #70e1f5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}
+
+.card:hover {
+  font-weight:bold;
+}
+
+button:hover{
+  font-weight:bold;
 }
 
 .dinoinfo {
@@ -56,21 +78,23 @@ h1 {
 
 #killid:hover {
   opacity:1;
+  background-color:#bf93a6;
 }
 
 .dinoform {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size:20px;
   background-color:white;
   color:black;
 }
 
-.dinoform input {
+input {
+  background: #70e1f5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat:no-repeat;
+  background-attachment: fixed;
   width:100%;
-}
-
-.dinoform p {
-
 }
 
 #adddinobutt {
@@ -85,19 +109,17 @@ h1 {
  select {
   width:100%;
   text-align-last:center;
+  background-color:beige;
 }
 
 .dinoeditinfo {
   width:100%;
   text-align:center;
-  background-color:white;
   color:black;
-  color:white;
 }
 
 .dinoeditinfo li {
-    list-style:none;
-    font-size:20px;
+
 }
 
 .dinoeditinfo {
@@ -106,13 +128,18 @@ h1 {
   color:white;
 }
 
-.dinoeditinfo2 {
-  font-family: 'Roboto', sans-serif;
-  font-size:20px;
-  background-image:url("../images/bg1.jpg");
-  background-attachment:fixed;
-  background-repeat:none;
+#editcard {
   color:white;
+}
+
+.dinoeditinfo2 {
+  font-family: 'Oswald', sans-serif;
+  font-size:20px;
+  /*background-image:url("../images/bg1.jpg");
+  background-attachment:fixed;
+  background-repeat:none;*/
+  color:black;
+  padding-top:15px;
 }
 
 .dinoeditinfo2 button {
@@ -141,7 +168,8 @@ h1 {
 
 .col-md-6 {
   padding-left:15px;
-  padding-right:15px
+  padding-right:15px;
+  opacity:1;
 }
 
 .col-md-12 {
@@ -163,5 +191,16 @@ h3 {
 }
 
 p {
+  color:black;
   margin-bottom: 0px;
+  font-family: 'Oswald', sans-serif;
+}
+
+h4 {
+  margin-bottom:0px;
+  padding-bottom:0px;
+}
+
+.card-header {
+  background-color:beige;
 }

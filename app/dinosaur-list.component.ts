@@ -33,11 +33,11 @@ import { Dinosaur } from './dinosaur.model';
   <li>Dislikes: {{currentItem.dislikes}}</li>
   </ul>
   </div>
-  <div class="card-footer bg-danger">
+  <div class="card-footer">
   <h4>Caretakers
-    <span *ngIf="currentItem.caretakers <= 5" style="color:black;">{{currentItem.caretakers}}</span>
-    <span *ngIf="currentItem.caretakers > 5" style="color:white;">{{currentItem.caretakers}}</span></h4>
-    <span *ngIf="currentItem.caretakers < 1" style="color:white;"> <h4>Nature always finds a way!</h4><br> </span><br>
+    <span *ngIf="currentItem.caretakers <= 5" style="color:red;">{{currentItem.caretakers}}</span>
+    <span *ngIf="currentItem.caretakers > 5" style="color:black;">{{currentItem.caretakers}}</span></h4>
+    <span *ngIf="currentItem.caretakers < 1" style="color:black;"> <h4>Nature always finds a way!</h4><br> </span><br>
     <button (click)="editDinosaurClicked(currentItem)" id="buttid">EDIT</button>
     <button (click)="updateDinosaurCaretakers(currentItem)" id="killid">KILL CARETAKER</button>
 </div>

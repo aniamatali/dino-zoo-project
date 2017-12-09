@@ -5,6 +5,7 @@ import { Dinosaur } from './dinosaur.model';
   selector: 'new-dinosaur',
   template: `
   <div class="dinoform">
+
   <form>
   <div class="row">
   <div class="col-md-6">
@@ -34,9 +35,11 @@ import { Dinosaur } from './dinosaur.model';
     <div class="col-md-12">
     <button id ="adddinobutt" (click) = "NewItems(species.value, name.value, age.value, diet.value, location.value, sex.value, likes.value, dislikes.value); species.value='';name.value='';age.value='';diet.value='';location.value='';sex.value='';likes.value='';dislikes.value='';">Add</button>
     </div>
+
     </div>
 
   </form>
+
 </div>
 
   `
