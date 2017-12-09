@@ -4,58 +4,73 @@
 }
 
 body {
-  background-color:black;
+  background-color:white;
 }
 
 .container {
-  border:2px solid white;
+  border:2px solid black;
   margin-bottom:10px;
   margin-top:10px;
 }
 
 .titlediv {
-  background-image:url("../images/bg1.jpg");
+  background-color:white;
   background-attachment:fixed;
   background-repeat:none;
 }
 
 h1 {
   font-family: 'Jurassic', sans-serif;
-  color:white;
-  font-size:150px;
-}
-
-#inputleft {
-  float:left;
-}
-
-#inputright {
-  float:right;
+  color:black;
+  font-size:250px;
+  text-align:center;
 }
 
 .card {
-
+  border-radius:0;
   color:black;
 }
 
 .dinoinfo {
-  background-image:url("../images/bg1.jpg");
+  color:black;
   background-attachment:fixed;
   background-repeat:none;
-  color:white;
+}
+
+#buttid {
+  width:50%;
+  font-size:15px;
+  opacity:.5;
+}
+
+#buttid:hover {
+  opacity:1;
+}
+
+#killid {
+  float:right;
+  width:50%;
+  font-size:15px;
+  opacity:.5;
+}
+
+#killid:hover {
+  opacity:1;
 }
 
 .dinoform {
   font-family: 'Roboto', sans-serif;
   font-size:20px;
-  background-image:url("../images/bg1.jpg");
-  background-attachment:fixed;
-  background-repeat:none;
-  color:white;
+  background-color:white;
+  color:black;
+}
+
+.dinoform input {
+  width:100%;
 }
 
 .dinoform p {
-  margin-top:5px;
+
 }
 
 #adddinobutt {
@@ -75,9 +90,8 @@ h1 {
 .dinoeditinfo {
   width:100%;
   text-align:center;
-  background-image:url("../images/bg1.jpg");
-  background-attachment:fixed;
-  background-repeat:none;
+  background-color:white;
+  color:black;
   color:white;
 }
 
@@ -110,9 +124,8 @@ h1 {
 .dinoinfolist {
   font-family: 'Roboto', sans-serif;
   font-size:20px;
-  background-image:url("../images/bg1.jpg");
-  background-attachment:fixed;
-  background-repeat:none;
+  background-color:white;
+  color:black;
   color:white;
 }
 
@@ -127,7 +140,8 @@ h1 {
 }
 
 .col-md-6 {
-  padding-left:50px;
+  padding-left:15px;
+  padding-right:15px
 }
 
 .col-md-12 {
